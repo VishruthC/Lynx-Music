@@ -68,6 +68,8 @@ session*.md
 *.bak
 *.orig
 
+keystore
+
 # ========== VERSION CONTROL NOISE ==========
 # If you publish to npm, these should be committed.
 # But for a standard repo, lockfiles can be ignored

@@ -1,7 +1,4 @@
-<div align="center">
-  <img src="./web/public/favicon.svg" alt="LynxMusic" height="64" />
-
-  # LynxMusic
+# LynxMusic
 
   A high-fidelity JioSaavn music player with offline playback, personalized recommendations, and synced lyrics.  
   Built for **Android** (Kotlin/Jetpack Compose) and the **Web** (React/TypeScript).
@@ -13,7 +10,7 @@
 
   [Overview](#overview) • [Features](#features) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [Project Structure](#project-structure) • [Architecture](#architecture) • [APIs](#external-apis)
 
-</div>
+
 
 ## Overview
 
@@ -313,7 +310,3 @@ LynxMusic personalizes the home feed based on your listening activity:
 > - Web: localStorage (via Zustand persist)
 
 ---
-
-<div align="center">
-  Built with ❤️ using Kotlin, Jetpack Compose, React, and TypeScript.
-</div>
