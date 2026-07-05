@@ -1,0 +1,81 @@
+# ========== NODE / WEB ==========
+node_modules/
+dist/
+dist-ssr/
+*.local
+# Vite cache
+.vite/
+
+# ========== ANDROID / GRADLE ==========
+build/
+.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# ========== ARTIFACTS THAT CAN BE REVERSED ==========
+# Dex, class files, compiled intermediates
+*.dex
+*.class
+app/build/
+# ProGuard/R8 mapping files (critical for deobfuscation)
+**/mapping.txt
+# APK analysis outputs
+**/outputs/apk/*
+**/outputs/bundle/*
+
+# ========== SECRETS & KEYS ==========
+.env
+.env.*.local
+.env.local
+.env.production
+# Secrets Gradle Plugin generated files
+secrets.properties
+# Spotify / API config with real keys
+app/src/main/res/values/keys.xml
+# Firebase / Google Services config with real keys
+google-services.json
+
+# ========== LOCAL MACHINE CONFIG ==========
+local.properties
+# IDE
+.idea/
+*.iml
+.vscode/
+.kotlin/
+.DS_Store
+*.swp
+*.swo
+# Windows
+Thumbs.db
+
+# ========== LOGS & CRASH DUMPS ==========
+*.log
+crashlytics-build.properties
+fabric.properties
+
+# ========== TEMP / SESSION / WORKSPACE ==========
+temp_*.py
+session*.md
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# ========== VERSION CONTROL NOISE ==========
+# If you publish to npm, these should be committed.
+# But for a standard repo, lockfiles can be ignored
+# to avoid merge conflicts (optional - uncomment if needed):
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ========== SECURITY: NEVER COMMIT ==========
+# Anything with 'secret', 'private', 'auth' in it
+# (handled manually if present)

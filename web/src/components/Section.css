@@ -1,0 +1,114 @@
+.content-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.content-section h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-lg);
+}
+
+.grid-item {
+  background-color: var(--card-color);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease;
+  position: relative;
+}
+
+.grid-item:hover {
+  background-color: var(--elevated-color);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.grid-item:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.grid-item:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-item:hover .img-wrapper img {
+  transform: scale(1.06);
+}
+
+.play-overlay {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-sm);
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-full);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+}
+
+.play-overlay:hover {
+  transform: translateY(0) scale(1.08);
+}
+
+.play-overlay:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.grid-item:hover .play-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item-info .item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--primary-color);
+}
+
+.item-info .item-desc {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.45;
+}

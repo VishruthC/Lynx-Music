@@ -1,0 +1,6 @@
+{
+  "name": "LynxMusic",
+  "description": "High-fidelity JioSaavn music player with offline playback, personalized playlists, and lyrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

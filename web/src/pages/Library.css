@@ -1,0 +1,118 @@
+.library-page {
+  padding-bottom: 2rem;
+}
+
+.library-page h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: var(--primary-color);
+  margin-bottom: var(--space-xl);
+}
+
+.library-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.library-tile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #4a3f8c, #7c3aed);
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.library-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.library-tile-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.library-tile-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.library-tile-info p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.library-divider {
+  height: 1px;
+  background: var(--border-color);
+  opacity: 0.5;
+}
+
+.library-subheading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.library-empty {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.library-playlists {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.library-playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+}
+
+.library-playlist-item:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.library-playlist-art {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--card-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.library-playlist-info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+}
+
+.library-playlist-info p {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}

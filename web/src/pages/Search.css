@@ -1,0 +1,131 @@
+.search-page {
+  padding-bottom: 2rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 2.5rem;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  padding: 0.85rem 3rem;
+  border-radius: 500px;
+  border: 1.5px solid transparent;
+  background-color: #242426;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input-wrapper input::placeholder {
+  color: var(--muted-color);
+}
+
+.search-input-wrapper input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.25);
+  background-color: #2b2b2e;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04);
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-color);
+  pointer-events: none;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-color);
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.15s ease;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.clear-icon:hover {
+  color: var(--primary-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.clear-icon:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.result-section h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.song-row {
+  display: grid;
+  grid-template-columns: 40px 6fr 4fr 1fr;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  gap: 1rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.song-row:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.song-row:active {
+  transform: scale(0.995);
+}
+
+.song-row:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
+}
+
+.song-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.col-title {
+  font-weight: 600;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col-artist {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-duration {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+}

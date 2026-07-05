@@ -1,0 +1,125 @@
+.brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: var(--primary-color);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-md);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.nav-links a.active {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 0;
+}
+
+.playlist-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-md);
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.action-btn:hover,
+.action-btn:focus-visible {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.action-btn:active {
+  transform: scale(0.98);
+}
+
+.action-btn:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 0;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 1.5rem 0;
+  opacity: 0.6;
+}
+
+.playlists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  overflow-y: auto;
+}
+
+.playlist-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.playlist-link:hover,
+.playlist-link:focus-visible {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.playlist-link.active {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.playlist-link:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 0;
+}
