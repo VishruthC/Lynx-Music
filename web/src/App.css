@@ -98,10 +98,11 @@ body::after {
 
 .app-container {
   display: grid;
-  grid-template-columns: var(--sidebar-width) 1fr;
-  grid-template-rows: 1fr var(--player-height);
+  grid-template-columns: var(--sidebar-width) 1fr 380px;
+  grid-template-rows: 1fr;
   height: 100dvh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .main-content {
@@ -154,7 +155,7 @@ body::after {
 @media (max-width: 768px) {
   .app-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr var(--player-height) 60px;
+    grid-template-rows: 1fr auto;
   }
 
   .sidebar {
@@ -163,6 +164,7 @@ body::after {
 
   .main-content {
     grid-column: 1;
+    grid-row: 1;
     padding: var(--space-md);
   }
 }

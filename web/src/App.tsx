@@ -5,7 +5,7 @@ import Search from './pages/Search';
 import PlaylistDetails from './pages/PlaylistDetails';
 import Library from './pages/Library';
 import Sidebar from './components/Sidebar';
-import PlayerBar from './components/PlayerBar';
+import RightPlayer from './components/RightPlayer';
 import FullscreenPlayer from './components/FullscreenPlayer';
 import Onboarding, { hasSeenOnboarding } from './components/Onboarding';
 import './App.css';
@@ -30,7 +30,7 @@ function App() {
             <Route path="/album/:id" element={<PlaylistDetails isAlbum={true} />} />
           </Routes>
         </main>
-        <PlayerBar />
+        <RightPlayer />
         <FullscreenPlayer />
       </div>
     </Router>
